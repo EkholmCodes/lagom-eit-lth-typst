@@ -1,4 +1,4 @@
-#import "@local/revised-eit-lth:0.1.0": thesis, mainmatter, frontmatter, backmatter, flex-caption
+#import "@preview/revised-eit-lth:0.1.0": thesis, mainmatter, frontmatter, backmatter, flex-caption
 #import "metadata.typ": *
 
 #show: thesis.with(

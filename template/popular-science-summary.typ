@@ -1,4 +1,4 @@
-#import "@local/revised-eit-lth:0.1.0": popular-science-summary
+#import "@preview/revised-eit-lth:0.1.0": popular-science-summary
 #import "metadata.typ": *
 
 #import "@preview/droplet:0.3.1": dropcap
