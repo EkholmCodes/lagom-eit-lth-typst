@@ -34,7 +34,7 @@
 ).pairs().sorted() [/ #abb: #des]
 
 #align(center)[
-  #quote(block: true, quotes: true, attribution: [Markus Törmänen #footnote([Translated. Original quote in Swedish.]), spring 2025])[
+  #quote(block: true, quotes: true, attribution: [A wise Associate Professor #footnote([Translated. Original quote in Swedish.]), spring 2025])[
 		To mature as an electrical engineer is to realize everything is about impedances.
 	]
 ]

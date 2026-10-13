@@ -1,5 +1,7 @@
 #import "global.typ": *
 
+//---------------------------------------------|  FRONT COVER  |---------------------------------------------//
+
 #let _front-cover-page(
   title,
   background,
@@ -52,6 +54,8 @@
     )
     #if debug {place(center + horizon, grid(rows: 7*(1fr,), columns: 5*(1fr,), stroke: 1pt))} // Used for debugging)
   ]
+
+//---------------------------------------------|  TITLE PAGE  |---------------------------------------------//
 
 #let _title-page(
   thesis-title,
@@ -108,6 +112,8 @@
     )
   }
 ]
+
+//---------------------------------------------|  INFORMATION PAGE  |---------------------------------------------//
 
 #let _information-page(
   title,
@@ -170,6 +176,8 @@
   Typeset in Typst #sys.version \
   Printed by #link("https://www.ehuset.lth.se/tryckeriet/", [Tryckeriet i E-huset])
 ]
+
+//---------------------------------------------|  BACK COVER  |---------------------------------------------//
 
 #let _back-cover(
   degree,

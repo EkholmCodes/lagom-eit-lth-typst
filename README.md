@@ -7,11 +7,11 @@ To look over again or make changes to in order to correct or improve.
 
 ---
 
-An unofficial thesis template made from the LaTeX version of the degree project at Electrical and information technology (EIT) at Lund University. Although from being inspired by other templates and projects (for example the original template and the template from CS), this template is an attempt to pull something new for students looking to write their thesis in Typst at EIT.
+An unofficial thesis template made from the LaTeX version of the degree project at Electrical and Information technology (EIT) at Lund University. Although from being inspired by other templates and projects (for example the original template and the template from CS), this template is an attempt to pull off something new for students looking to write their thesis in Typst at EIT.
 
 It contains one template file which has four functions to call upon for the different documents in the degree project:
 
-- **thesis** - The project report to be written
+- **thesis** - Project report to be written.
 - **popular-science-summary** - For promoting your work in a Lund University graphic based fashion.
 - **goal-document** - For early planning and goal-setting for the project. 
 - **project-plan** - Complements and is used inside the the goal document.
@@ -115,9 +115,17 @@ To consistently use the same parameters across all documents, the parameters are
 | `print` | `bool` | `false` | Enables print mode formatting (requires `report-number`). |
 
 
-### The ```print``` field
+### ```print``` field
 
-When this parameter is set to true, the thesis will be put to a G5 format with front and end covers. The front cover is goverend by ```front-cover-background```. To print, the thesis must have a report number, which is given by the institution. By default print is set to false, which renders the report on an a4 paper with some metadata on the top along with bounding boxes illustrating the G5 paper.
+When this parameter is set to true, the thesis will be put to a G5 format with front and end covers. The front cover is goverend by ```front-cover-background```. To print, the thesis must have a report number, which is given by the institution. By default print is set to false, which renders the report on an a4 paper with some metadata on the top along with bounding boxes illustrating the G5 paper, which is used for drafting.
+
+### state functions
+
+To enter a specific style (or state) inside the thesis, the template contains three functions for the three types of matter to be used. ```frontmatter```, ```mainmatter```, and ```backmatter```. These define how counters, page numbering and various other things work and are called using show-rules. See the example for usage of the functions.
+
+### ```flex-caption``` function
+
+This function gives the ability to use a different body in headings and figure captions in the document and compared to the outline, for example when having a longer and more explanatory caption or a heading spanning several lines.
 
 ### Example
 

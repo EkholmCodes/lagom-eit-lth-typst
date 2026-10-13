@@ -5,6 +5,8 @@
   return (query(heading.where(level: 1)).any(it => it.location().page() == here().page()))
 }
 
+//---------------------------------------------|  HEADERS  |---------------------------------------------//
+
 // A simple header style, but with alternating body between the last level 2 heading and the level 1 heading
 #let _header-alternating() = {
   set text(font: font-secondary, size: size-secondary)
@@ -75,7 +77,7 @@
   }
 }
 
-// Footers
+//---------------------------------------------|  FOOTERS  |---------------------------------------------//
   
 // Footer for frontmatter
 #let _front-footer() = {
@@ -94,7 +96,7 @@
   }
 }
   
-// Headings
+//---------------------------------------------|  HEADINGS  |---------------------------------------------//
 
 // Heading style from the original LaTeX template
 #let _heading-original(it) = {
