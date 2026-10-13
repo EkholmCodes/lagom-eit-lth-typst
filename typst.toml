@@ -1,7 +1,7 @@
 [package]
-name = "revised-eit-lth"
+name = "lagom-eit-lth"
 version = "0.1.0"
-entrypoint = "src/revised-eit-lth.typ"
+entrypoint = "src/lagom-eit-lth.typ"
 authors = ["Lucas Ekholm @EkholmCodes"]
 license = "MIT"
 description = "Unofficial thesis for degree projects at Electrical and information technology at Lund University."

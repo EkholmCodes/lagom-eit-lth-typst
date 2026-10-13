@@ -1,9 +1,9 @@
-# Revised EIT
+# Lagom EIT
 
-**re·vised** - /*rɪˈvaɪzd*/  
-adjective
+**la·gom** - /*ˈlɑ̂ːɡɔm*/  
+adjective, adverb
 
-To look over again or make changes to in order to correct or improve.
+Swedish word for not too little, not too much; just the right amount.
 
 ---
 
