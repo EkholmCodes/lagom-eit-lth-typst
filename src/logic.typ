@@ -9,9 +9,10 @@
   if numbers.len() == 1 {
       numbering("1", ..numbers)
     } else {
-      numbering("1.1", ..numbers) 
+      numbering("1.1", ..numbers)
     }
 }
+
 // Appendix numbering, single letter if level 1
 #let _appendix-chapter-numbering(.. n) = {
   let numbers = n.pos()
@@ -29,13 +30,13 @@
 #let _appendix-equation-numbering(n) = numbering("(A.1)", counter(heading).get().first(), n)
 
 // Function for resetting counters for new chapters. Called everytime a chapter is started with a show rule. If adding new kinds of figures, include a reset here
-#let _resetCounters() = {
+#let _reset-counters() = {
   counter(figure.where(kind: table)).update(0)
   counter(figure.where(kind: raw)).update(0)
   counter(figure.where(kind: image)).update(0)
   counter(math.equation).update(0)
 }
-    
+
 //---------------------------------------------|  LOGIC  |---------------------------------------------//
 
 // States
@@ -61,6 +62,7 @@
   set page(header: context state("header").get(), numbering: "1", footer: _main-footer())
   counter(page).update(1)
   counter(heading).update(0)
+  set math.equation(numbering: _equation-numbering)
   document-state.update("main")
   body
 }

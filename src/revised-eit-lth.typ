@@ -1,7 +1,7 @@
 #import "global.typ": *
 #import "print.typ": *
 #import "style.typ": *
-#import "logic.typ": *
+#import "logic.typ": frontmatter, mainmatter, backmatter, _reset-counters, _in-outline
 
 #let template-version = version(0,1,0) // Change when changes are made to the template, used to distinguish from original
 
@@ -191,7 +191,7 @@
   set terms(tight: false, spacing: 5mm)
 
   // Equations
-  set math.equation(supplement: none, numbering: _equation-numbering)
+  set math.equation(supplement: none)
   show math.equation: set text(font: font-math)
   
   //Raw text (Code)
@@ -255,7 +255,7 @@
   show heading.where(level: 3): set text(size: size-sub-sub-heading)
   
   // Figures out which heading to place depending on the state of the document
-  show heading.where(level: 1): it => context{ pagebreak(weak: true, to: "odd") + _resetCounters() + state("heading").get()(it)}
+  show heading.where(level: 1): it => context{ pagebreak(weak: true, to: "odd") + _reset-counters() + state("heading").get()(it)}
   
   // Bibliography
   set bibliography(title: "References" ,style: "ieee")
