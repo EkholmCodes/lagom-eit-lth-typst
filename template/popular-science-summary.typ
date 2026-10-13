@@ -10,7 +10,7 @@
   authors: authors,
   supervisors: supervisors,
   examiner: examiner,
-  lead-paragraph: [The lead paragraph (abstract) should contain a maxmimum of 200 characters/35 words given the maximum is reached on the title. #lorem(35 - 12)],
+  lead-paragraph: [The lead paragraph (abstract) should contain a maximum of 200 characters/35 words given the maximum is reached on the title. #lorem(35 - 12)],
   thesis-link: "https://www.student.lth.se/english/masters-students/degree-project/popular-science-readership/",
   presentation-date: end-date,
   lang: "en"

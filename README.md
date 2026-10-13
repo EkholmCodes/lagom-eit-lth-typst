@@ -59,7 +59,7 @@ To consistently use the same parameters across all documents, the parameters are
     affiliation: "LTH"
   ),
   company: (
-    name: "Company Superisor",
+    name: "Company Supervisor",
     email: "company.supervisor@company.com",
     affiliation: "Company name"
   ),
@@ -117,7 +117,7 @@ To consistently use the same parameters across all documents, the parameters are
 
 ### ```print``` field
 
-When this parameter is set to true, the thesis will be put to a G5 format with front and end covers. The front cover is goverend by ```front-cover-background```. To print, the thesis must have a report number, which is given by the institution. By default print is set to false, which renders the report on an a4 paper with some metadata on the top along with bounding boxes illustrating the G5 paper, which is used for drafting.
+When this parameter is set to true, the thesis will be put to a G5 format with front and end covers. The front cover is governed by ```front-cover-background```. To print, the thesis must have a report number, which is given by the institution. By default print is set to false, which renders the report on an a4 paper with some metadata on the top along with bounding boxes illustrating the G5 paper, which is used for drafting.
 
 ### state functions
 
@@ -206,5 +206,5 @@ This function gives the ability to use a different body in headings and figure c
 ## Todo
 
 - Fix image in affiliation to be of type content instead of string to the image path.
-- Seperate styling to a different file called style.typ?
+- Separate styling to a different file called style.typ?
 - Finish project plan template.

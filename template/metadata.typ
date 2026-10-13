@@ -24,7 +24,7 @@
     affiliation: "LTH"
   ),
   company: (
-    name: "Company Superisor",
+    name: "Company Supervisor",
     email: "company.supervisor@company.com",
     affiliation: "Company name"
   ),

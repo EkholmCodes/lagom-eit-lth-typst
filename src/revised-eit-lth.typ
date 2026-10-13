@@ -654,7 +654,7 @@
     )
   )
 
-  // Area used for signing the docuemnt
+  // Area used for signing the document
   let signing() = {
     language-fields.at(lang).at("signing-line") + ":"
     v(0.5em)
