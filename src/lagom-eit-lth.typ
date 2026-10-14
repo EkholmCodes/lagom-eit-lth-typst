@@ -3,7 +3,7 @@
 #import "style.typ": *
 #import "logic.typ": frontmatter, mainmatter, backmatter, _reset-counters, _in-outline
 
-#let template-version = version(0,1,0) // Change when changes are made to the template, used to distinguish from original
+#let template-version = version(0,1,1) // Change when changes are made to the template, used to distinguish from original
 
 // Custom captions, used when wanting two different texts from the main body and the outline
 #let flex-caption(long, short) = context if state("in-outline").get() { short } else { long }

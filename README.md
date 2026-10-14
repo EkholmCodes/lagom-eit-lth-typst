@@ -36,7 +36,7 @@ To consistently use the same parameters across all documents, the parameters are
 /* Metadata for the degree project */
 
 #let title = [On the Importance of Modern Typesetting]
-#let subtitle = [Design, fabrication and measurements of a revised thesis.]
+#let subtitle = [How would one even begin with such adament questions?]
 
 #let authors = (
     (

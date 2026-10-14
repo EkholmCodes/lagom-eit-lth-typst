@@ -1,4 +1,4 @@
-#import "@preview/lagom-eit-lth:0.1.0": popular-science-summary
+#import "@preview/lagom-eit-lth:0.1.1": popular-science-summary
 #import "metadata.typ": *
 
 #import "@preview/droplet:0.3.1": dropcap

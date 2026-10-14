@@ -1,6 +1,6 @@
 [package]
 name = "lagom-eit-lth"
-version = "0.1.0"
+version = "0.1.1"
 entrypoint = "src/lagom-eit-lth.typ"
 authors = ["Lucas Ekholm @EkholmCodes"]
 license = "MIT"

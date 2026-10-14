@@ -1,4 +1,4 @@
-#import "@preview/lagom-eit-lth:0.1.0": goal-document, project-plan
+#import "@preview/lagom-eit-lth:0.1.1": goal-document, project-plan
 #import "metadata.typ": *
 #import "@preview/gantty:0.5.1": gantt
 
