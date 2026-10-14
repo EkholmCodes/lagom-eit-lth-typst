@@ -290,7 +290,7 @@
     examiner,
     degree-level-en,
     department-en,
-    ("../assets/LU-BLACK-ENG.png",) + if affiliations != none {
+    (path("../assets/LU-BLACK-ENG.png"),) + if affiliations != none {
       affiliations.map(affiliation => affiliation.logo)
     },
     date

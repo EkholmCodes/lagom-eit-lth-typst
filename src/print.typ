@@ -100,7 +100,7 @@
         print-authors,
         date.display("[month repr:long] [day padding:none], [year]"), 
         {
-          let images-filtered = images.filter(img => type(img) == type(""))
+          let images-filtered = images.filter(img => type(img) == type(path(".")))
           
           if images-filtered.len() != 0 {
             grid(column-gutter: 0.2fr,
