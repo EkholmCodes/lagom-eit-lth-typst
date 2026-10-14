@@ -205,6 +205,6 @@ This function gives the ability to use a different body in headings and figure c
 
 ## Todo
 
-- Fix image in affiliation to be of type content instead of string to the image path.
-- Separate styling to a different file called style.typ?
+- ~~Fix image in affiliation to be of type content instead of string to the image path.~~ (It is now of type path (supported since Typst 0.15.0).)
+- ~~Separate styling to a different file called style.typ?~~ (Several new files for easier workflow.)
 - Finish project plan template.
