@@ -62,6 +62,7 @@
   set page(header: context state("header").get(), numbering: "1", footer: _main-footer())
   counter(page).update(1)
   counter(heading).update(0)
+  set figure(numbering: _figure-numbering)
   set math.equation(numbering: _equation-numbering)
   document-state.update("main")
   body
