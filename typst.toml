@@ -2,7 +2,7 @@
 name = "lagom-eit-lth"
 version = "0.1.1"
 entrypoint = "src/lagom-eit-lth.typ"
-authors = ["Lucas Ekholm @EkholmCodes"]
+authors = ["EkholmCodes <https://github.com/EkholmCodes>"]
 license = "MIT"
 description = "Unofficial thesis for degree projects at Electrical and information technology at Lund University."
 repository = "https://github.com/EkholmCodes/novel-eit-lth-typst"
