@@ -105,7 +105,7 @@
           if images-filtered.len() != 0 {
             grid(column-gutter: 0.2fr,
               columns: (1fr,) * images-filtered.len(),
-              ..images-filtered.map(img => image(img, fit: "contain", width: 5cm)))
+              ..images-filtered.map(img => image(img, fit: "contain", height: 3.5cm)))
           }
         },
       )
