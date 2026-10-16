@@ -172,7 +172,6 @@
       #department \ Faculty of Engineering, LTH \ Lund University #parbreak() Box 118 \ SE-221 00 Lund \ Sweden
   ]
 
-
   Typeset in Typst #sys.version \
   Printed by #link("https://www.ehuset.lth.se/tryckeriet/", [Tryckeriet i E-huset])
 ]
