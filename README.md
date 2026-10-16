@@ -7,7 +7,7 @@ Swedish word for not too little, not too much; just the right amount.
 
 ---
 
-An unofficial thesis template made from the LaTeX version of the degree project at Electrical and Information technology (EIT) at Lund University. Although from being inspired by other templates and projects (for example the original template and the template from CS), this template is an attempt to pull off something new for students looking to write their thesis in Typst at EIT.
+An unofficial thesis template made from the LaTeX version of the degree project at Electrical and Information technology (EIT) at Lund Faculty of Engineering (LTH), Lund University. Although being inspired by other templates and projects (for example the original template and the one from CS), this is an attempt to give students something fresh when looking to write their thesis in Typst. It is made to be easy to work for the student with filled out fields, premade folder structure and few extra functions. It still provides the ability for some customization. The front matter is not pre determined as other templates, and the front cover is customizable (as long as it complies with university standards).
 
 It contains one template file which has four functions to call upon for the different documents in the degree project:
 
@@ -27,6 +27,10 @@ typst init @preview/lagom-eit-lth project
 cd project
 typst compile thesis.typ
 ```
+
+### Package structure
+
+The only thing present when initializing the project is the metadata and the three documents to be rendered, most notably the thesis and the popular science summary. These are filled out and can be rendered immidately, and contains enough information and examples to get started writing on ones own.
 
 ### Metadata
 
@@ -207,6 +211,6 @@ This function gives the ability to use a different body in headings and figure c
 
 - ~~Fix image in affiliation to be of type content instead of string to the image path.~~ (It is now of type path which is supported since Typst 0.15.0)
 - ~~Separate styling to a different file called style.typ?~~ (Several new files for easier workflow)
-- ~~Fix figure and table counters.~~
+- ~~Fix figure and table counters.~~ (Now numbers as IEEE standard, for example Figure 1.1 and Table 2.1)
 - Finish project plan template.
 - Confirm with local printing that front and back covers are compliant.
