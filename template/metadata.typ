@@ -1,21 +1,21 @@
 /* Metadata for the degree project */
 
 #let title = [On the Importance of Modern Typesetting]
-#let subtitle = [How would one even begin with such adament questions?]
+#let subtitle = [How and why some institutions never leave the guilded age]
 
 #let authors = (
-    (
+  (
       name: "John Doe",
       email: "john.doe@examplemail.com",
       civic-number: "010101-0101",
-    ),
-    (
+  ),
+  (
       name: "Jane Doe",
       affiliation: "Lund University",
       email: "jane.doe@examplemail.com",
       civic-number: "020202-0202",  
-    ),
-  )
+  ),
+)
  
 #let supervisors = (
   academic: (

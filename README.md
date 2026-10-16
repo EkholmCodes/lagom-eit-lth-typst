@@ -39,18 +39,18 @@ To consistently use the same parameters across all documents, the parameters are
 #let subtitle = [How would one even begin with such adament questions?]
 
 #let authors = (
-    (
+  (
       name: "John Doe",
       email: "john.doe@examplemail.com",
       civic-number: "010101-0101",
-    ),
-    (
+  ),
+  (
       name: "Jane Doe",
       affiliation: "Lund University",
       email: "jane.doe@examplemail.com",
       civic-number: "020202-0202",  
-    ),
-  )
+  ),
+)
  
 #let supervisors = (
   academic: (
