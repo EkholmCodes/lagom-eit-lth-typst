@@ -1,5 +1,3 @@
-# Lagom EIT
-
 **la·gom** - /*ˈlɑ̂ːɡɔm*/  
 adjective, adverb
 
@@ -16,9 +14,9 @@ It contains one template file which has four functions to call upon for the diff
 - **goal-document** - For early planning and goal-setting for the project. 
 - **project-plan** - Complements and is used inside the the goal document.
 
-## Usage
+# Usage
 
-### To start
+## To start
 
 Open in the web app, or the CLI using
 
@@ -28,7 +26,7 @@ cd project
 typst compile thesis.typ
 ```
 
-### Metadata
+## Metadata
 
 To consistently use the same parameters across all documents, the parameters are imported through ```metadata.typ```. This is done such that the writer only needs to bother once when configuring. 
 
@@ -87,11 +85,11 @@ To consistently use the same parameters across all documents, the parameters are
 #let end-date = datetime(year: 2022, month: 10, day: 22)
 ```
 
-## thesis
+# thesis
 
-### Configuration
+## Configuration
 
-#### Document Fields
+### Document Fields
 
 | Parameter | Type | Required / Default | Description |
 | :--- | :--- | :--- | :--- |
@@ -115,19 +113,19 @@ To consistently use the same parameters across all documents, the parameters are
 | `print` | `bool` | `false` | Enables print mode formatting (requires `report-number`). |
 
 
-### ```print``` field
+## ```print``` field
 
 When this parameter is set to true, the thesis will be put to a G5 format with front and end covers. The front cover is governed by ```front-cover-background```. To print, the thesis must have a report number, which is given by the institution. By default print is set to false, which renders the report on an a4 paper with some metadata on the top along with bounding boxes illustrating the G5 paper, which is used for drafting.
 
-### state functions
+## state functions
 
 To enter a specific style (or state) inside the thesis, the template contains three functions for the three types of matter to be used. ```frontmatter```, ```mainmatter```, and ```backmatter```. These define how counters, page numbering and various other things work and are called using show-rules. See the example for usage of the functions.
 
-### ```flex-caption``` function
+## ```flex-caption``` function
 
 This function gives the ability to use a different body in headings and figure captions in the document and compared to the outline, for example when having a longer and more explanatory caption or a heading spanning several lines.
 
-### Example
+## Example
 
 ```typst
 #import "@local/novel-eit-lth:0.1.0": thesis, mainmatter, frontmatter, backmatter, flex-caption
@@ -163,9 +161,9 @@ This function gives the ability to use a different body in headings and figure c
 ```
 
 
-## popular-science-summary
+# popular-science-summary
 
-### Document fields
+## Document fields
 | Field | Type | Required / Default | Description |
 | :--- | :--- | :--- | :--- |
 | `summary-title` | `string` / `content` | **Required** | The title of the thesis summary. |
@@ -178,9 +176,9 @@ This function gives the ability to use a different body in headings and figure c
 | `presentation-date` | `datetime` | `datetime.today()` | The date of the presentation. Defaults to current date. |
 | `lang` | `string` | `"sv"` | Language setting for the document. Allowed values: `"sv"` or `"en"`. |
 
-## goal-document
+# goal-document
 
-### Document fields
+## Document fields
 
 | Parameter | Type | Required / Default | Description |
 | :--- | :--- | :--- | :--- |
@@ -193,9 +191,9 @@ This function gives the ability to use a different body in headings and figure c
 | `examiner` | `string` / `dictionary` | **Required** | Details or name of the assigned examiner. |
 | `lang` | `string` | `"en"` | Language setting for the document. Allowed values: `"en"` or `"sv"`. |
 
-## project-plan
+# project-plan
 
-### Document fields
+## Document fields
 
 | Parameter | Type | Required / Default | Description |
 | :--- | :--- | :--- | :--- |
@@ -203,7 +201,7 @@ This function gives the ability to use a different body in headings and figure c
 | `examiner` | `string` / `dictionary` | **Required** | Details or name of the assigned examiner. |
 | `lang` | `string` | `"en"` | Language setting for the document. Allowed values: `"en"` or `"sv"`. |
 
-## Todo
+# Todo
 
 - ~~Fix image in affiliation to be of type content instead of string to the image path.~~ (It is now of type path which is supported since Typst 0.15.0)
 - ~~Separate styling to a different file called style.typ?~~ (Several new files for easier workflow)
