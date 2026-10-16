@@ -23,7 +23,7 @@ It contains one template file which has four functions to call upon for the diff
 Open in the web app, or the CLI using
 
 ```bash
-typst init @preview/revised-eit-lth project
+typst init @preview/lagom-eit-lth project
 cd project
 typst compile thesis.typ
 ```
