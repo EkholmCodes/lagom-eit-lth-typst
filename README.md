@@ -1,6 +1,6 @@
 # Lagom EIT
 
-**la·gom** - /*ˈlɑ̂ːɡɔm*/  
+**la·gom** - /*ˈlɑ̂ːɡɔm*/
 adjective, adverb
 
 Swedish word for not too little, not too much; just the right amount.
@@ -209,3 +209,4 @@ This function gives the ability to use a different body in headings and figure c
 - ~~Separate styling to a different file called style.typ?~~ (Several new files for easier workflow)
 - ~~Fix figure and table counters.~~
 - Finish project plan template.
+- Confirm with local printing that front and back covers are compliant.
