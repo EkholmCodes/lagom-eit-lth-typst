@@ -190,6 +190,11 @@
   // Terms, used mainly in the abbreviations or nomenclature section
   set terms(tight: false, spacing: 5mm)
 
+  // Lists
+  set enum(tight: false)
+  show enum: set block(inset: (left: 1cm))
+  show list: set block(inset: (left: 1cm))
+
   // Equations
   set math.equation(supplement: none)
   show math.equation: set text(font: font-math)
