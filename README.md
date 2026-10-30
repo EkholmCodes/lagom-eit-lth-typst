@@ -7,7 +7,7 @@ Swedish word for not too little, not too much; just the right amount.
 
 ---
 
-An unofficial thesis template made from the LaTeX version of the degree project at Electrical and Information technology (EIT) at Lund Faculty of Engineering (LTH), Lund University. Although being inspired by other templates and projects (for example the original template and the one from CS), this is an attempt to give students something fresh when looking to write their thesis in Typst. It is made to be easy to work for the student with filled out fields, premade folder structure and few extra functions. It still provides the ability for some customization. The front matter is not pre determined as other templates, and the front cover is customizable (as long as it complies with university standards).
+Unofficial thesis template made for degree projectsa at the institution of Electrical and Information technology (EIT) at Lund Faculty of Engineering (LTH), Lund University. Although being inspired by other templates and projects (for example the original template and the one from CS), this is an attempt to give students something fresh when looking to write their thesis in Typst. It is made to be easy to work with, having filled-out fields, premade folder structure and few extra functions. It still provides the ability for some customization. The front matter is not pre-determined as other templates and the front cover is customizable (as long as it complies with university standards).
 
 It contains one template file which has four functions to call upon for the different documents in the degree project:
 
@@ -15,6 +15,8 @@ It contains one template file which has four functions to call upon for the diff
 - **popular-science-summary** - For promoting your work in a Lund University graphic based fashion.
 - **goal-document** - For early planning and goal-setting for the project. 
 - **project-plan** - Complements and is used inside the the goal document.
+
+which all are available from startup as distinct documents.
 
 ## Usage
 
@@ -30,11 +32,11 @@ typst compile thesis.typ
 
 ### Package structure
 
-The only thing present when initializing the project is the metadata and the three documents to be rendered, most notably the thesis and the popular science summary. These are filled out and can be rendered immidately, and contains enough information and examples to get started writing on ones own.
+The only thing present when initializing the project is the metadata and the three documents to be rendered, most notably the thesis and the popular science summary. These are filled out and can be previewed immidately, and contains enough information and examples to get started writing on ones own.
 
 ### Metadata
 
-To consistently use the same parameters across all documents, the parameters are imported through ```metadata.typ```. This is done such that the writer only needs to bother once when configuring. 
+To consistently use the same parameters across all documents, the parameters are imported through ```metadata.typ```. This is done such that the writer only needs to bother once when configuring the documents. Not all fields are present here, for example the swedish translations for the titles, as those are not mandatory.
 
 ```typst
 /* Metadata for the degree project */
