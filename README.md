@@ -7,7 +7,7 @@ Swedish word for not too little, not too much; just the right amount.
 
 ---
 
-Unofficial thesis template made for degree projectsa at the institution of Electrical and Information technology (EIT) at Lund Faculty of Engineering (LTH), Lund University. Although being inspired by other templates and projects (for example the original template and the one from CS), this is an attempt to give students something fresh when looking to write their thesis in Typst. It is made to be easy to work with, having filled-out fields, premade folder structure and few extra functions. It still provides the ability for some customization. The front matter is not pre-determined as other templates and the front cover is customizable (as long as it complies with university standards).
+Unofficial thesis template made for degree projects at the institution of Electrical and Information technology (EIT) at Lund Faculty of Engineering (LTH), Lund University. Although being inspired by other templates and projects (for example the original template and the one from CS), this is an attempt to give students something fresh when looking to write their thesis in Typst. It is made to be easy to work with, having filled-out fields, premade folder structure and few extra functions. It still provides the ability for some customization. The front matter is not pre-determined as other templates and the front cover is customizable (as long as it complies with university standards).
 
 It contains one template file which has four functions to call upon for the different documents in the degree project:
 
