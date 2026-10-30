@@ -112,7 +112,7 @@ To consistently use the same parameters across all documents, the parameters are
 | `description` | `string` / `content` | `none` | Optional brief summary or metadata description. |
 | `keywords` | `array` | `()` | List of keywords for document metadata. |
 | `document-style` | `string` | `"revised"` | Layout style for headers/headings. Allowed values: `"original"` or `"revised"`. |
-| `front-cover-background` | `content` | `rect(width: 100%, height: 100%, fill: lu-light-brown)` | Visual element or color definition for the cover background. |
+| `front-cover-background` | `content` or `none` | `rect(width: 100%, height: 100%, fill: lu-light-brown)` | Visual element or color definition for the cover background. If set to none, no front and back covers are generated. |
 | `date` | `datetime` | `datetime.today()` | Publication or submission date. |
 | `report-number` | `string` / `integer` | `none` | Report ID number. **Required if `print` is set to `true`**. |
 | `issn` | `string` | `none` | ISSN identifier for published prints. |
@@ -121,7 +121,7 @@ To consistently use the same parameters across all documents, the parameters are
 
 ### ```print``` field
 
-When this parameter is set to true, the thesis will be put to a G5 format with front and end covers. The front cover is governed by ```front-cover-background```. To print, the thesis must have a report number, which is given by the institution. By default print is set to false, which renders the report on an a4 paper with some metadata on the top along with bounding boxes illustrating the G5 paper, which is used for drafting.
+When this parameter is set to true, the thesis will be put to a G5 format with front and end covers. The front cover is governed by ```front-cover-background```. To print, the thesis must have a report number, which is given by the institution. By default print is set to false, which renders the report on an a4 paper with some metadata on the top along with bounding boxes illustrating the G5 paper, which is used for drafting. If the author wished to generate a print-ready document without covers, ```front-cover-background``` can be set to ```none```.
 
 ### state functions
 
@@ -214,3 +214,4 @@ This function gives the ability to use a different body in headings and figure c
 - ~~Fix figure and table counters.~~ (Now numbers as IEEE standard, for example Figure 1.1 and Table 2.1)
 - Finish project plan template.
 - Confirm with local printing that front and back covers are compliant.
+- ~~Have the option to skip front and back cover but still print as G5.~~

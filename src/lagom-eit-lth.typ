@@ -58,8 +58,8 @@
   assert(type(date) == datetime, 
     message: "Variable 'date' must be of type datetime."
   )
-  assert(type(front-cover-background) == content, 
-    message: "Variable 'front-cover-background' must be of type content."
+  assert(type(front-cover-background) == content or front-cover-background == none, 
+    message: "Variable 'front-cover-background' must be of type content or none."
   )
 
   // Assertions for logic and specific values
@@ -272,7 +272,7 @@
   // Beginning of document
   
   // Front cover page, if print is true
-  if print == true {_front-cover-page(
+  if print == true and front-cover-background != none {_front-cover-page(
     thesis-title,
     front-cover-background,
     authors,
@@ -281,7 +281,7 @@
   )}
 
   // Blank page
-  if print == true {
+  if print == true and front-cover-background != none {
     page(align(bottom + left, text(style: "italic", "Blank page — remove in final print.")))
     pagebreak(to: "odd")
   }
@@ -321,7 +321,7 @@
   body
 
   // Backcover, if print is true
-  if print == true {_back-cover(
+  if print == true and front-cover-background != none {_back-cover(
     degree-level-en,
     department-en,
     department-short-en,
