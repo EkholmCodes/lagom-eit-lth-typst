@@ -214,4 +214,4 @@ This function gives the ability to use a different body in headings and figure c
 - ~~Fix figure and table counters.~~ (Now numbers as IEEE standard, for example Figure 1.1 and Table 2.1)
 - Finish project plan template.
 - Confirm with local printing that front and back covers are compliant.
-- ~~Have the option to skip front and back cover but still print as G5.~~ (Put ```front-cover-background`` to none)
+- ~~Have the option to skip front and back cover but still print as G5.~~ (Put ```front-cover-background``` to none)
