@@ -30,7 +30,7 @@
 #lorem(95) 
 
 = Word limits.
-In total, the summary should have a maximum of 3000 characters. In this text, there are #underline(str(total.characters)) which is almost perfect. As seen, it fits neatly.
+In total, the summary should have a maximum of 3000 characters. In this text, there are #underline(str(total.characters)) which is almost perfect. As seen, it fits neatly on one page.
 
 #lorem(140)
 

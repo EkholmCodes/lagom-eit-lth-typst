@@ -386,7 +386,8 @@
       presented: "Presenterad",
       availability: "Tillgänglig vid",
       figure-supplement: "Figur",
-      and-label: "och"
+      and-label: "och",
+      months : ("januari", "februari", "mars", "april", "maj", "juni", "juli", "augusti", "september", "oktober", "november", "december")
     ),
     
     en: (
@@ -402,11 +403,12 @@
       presented: "Presented",
       availability: "Available at",
       figure-supplement: "Figure",
-      and-label: "and"
+      and-label: "and",
+      months : ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
     )
   )
 
-  // Information box about the degree project found in the top of the paper
+  // Information box about the degree project found in the top of the document
   let information() = {
     set text(size: size-secondary)
     set par(first-line-indent: 0pt, spacing: 5mm)
@@ -421,7 +423,8 @@
       stroke: (left: (thickness: 1pt, paint: lu-bronze, cap: "round")),
       outset: 3mm,
       [
-        #language-fields.at(lang).at("department") | #language-fields.at(lang).at("faculty") | #language-fields.at(lang).at("presented") #presentation-date.display("[day padding:none] [month repr:long] [year]") 
+        // The date is rendered this way instead of datetime.display() due to the month not being language controlled and always displays the english translation for the month. If this is fixed in the future, this will be updated. 
+        #language-fields.at(lang).at("department") | #language-fields.at(lang).at("faculty") | #language-fields.at(lang).at("presented") #presentation-date.display("[day padding:none]") #language-fields.at(lang).at("months").at(presentation-date.month() - 1) #presentation-date.year()
         
         #parbreak()
         
